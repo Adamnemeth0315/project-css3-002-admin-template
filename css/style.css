@@ -27,18 +27,20 @@ h5 {
     background-color: rgb(51,57,64);
     color: rgb(236,236,236);
     height: 4rem;
+    position: relative;
 }
 
 .header__title {
-    display: inline-block;
+    display: inline;
     font-size: 1.25rem;
     position: relative;
+    position: absolute;
 }
 
 .header__search {
     display: inline;
-    position: relative;
-    float: right;
+    position: absolute;
+    right: 1.6rem;
     padding-top:0.75rem ;
 }
 
@@ -97,14 +99,6 @@ h5 {
     line-height: 4rem;
 }
 
-span {
-    color: #a0a0a0;
-    margin: 2.5rem 1rem;
-    font-size: 1.5rem;
-    font-weight: 700;
-    line-height: 4rem;
-    float: right;
-}
 
 .nav__li a:hover {
     color: #fff;
@@ -147,15 +141,10 @@ span {
 
 .card__bottom {
     text-align: left;
-    justify-content: center;
+    align-items: center;
+
 }
 
-.card__bottom span {
-    color: rgb(255,255,255);
-    font-size: 0.9rem;
-    margin-left: 2rem;
-    float: none;
-}
 
 .main__cards {
     display: grid;
@@ -199,3 +188,19 @@ span {
     background-color: rgb(255,50,85) ;
 }
 
+.span--left {
+    color: rgb(255,255,255);
+    float: left;
+    font-size: 0.9rem;
+    margin-left: 2rem;
+    margin: 2.5rem 1rem;
+    font-weight: 700;
+}
+
+.span--right {
+    color: rgb(255,255,255);
+    float: right;
+    font-size: 0.9rem;
+    margin: 2.5rem 1rem;
+    font-weight: 700;
+}
